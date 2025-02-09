@@ -1,14 +1,26 @@
 
-const API_URL = (lat, lon) => 
-  `https://api.nasa.gov/planetary/earth/assets?lon=${lon}&lat=${lat}&date=2019-01-01&dim=0.15&api_key=DEMO_KEY`;
-
-const FALLBACK_IMAGE = "https://moon.nasa.gov/system/resources/detail_files/251_PIA13517.jpg";
-
-const lunarData = [
-  { lat: 170, lon: 395 }, 
-  { lat: 160, lon: 390 },
-  { lat: 180, lon: 400 },
+const lunarLocations = [
+  {
+    lat: 0,
+    lon: 23.47,
+    image: "https://www.nasa.gov/wp-content/uploads/2019/07/as11-40-5903.jpg",
+    name: "Sea of Tranquility"
+  },
+  {
+    lat: -3.01,
+    lon: -23.42,
+    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo12-landing-site.jpg",
+    name: "Ocean of Storms"
+  },
+  {
+    lat: 26.13,
+    lon: 3.63,
+    image: "https://www.nasa.gov/wp-content/uploads/2019/11/apollolandingsites.jpg",
+    name: "Hadley Rille"
+  }
 ];
+
+let currentRound = 0;
 
 let currentRound = 0;
 let score = 0;
@@ -26,23 +38,15 @@ function initGame() {
   submitGuessButton.addEventListener("click", checkGuess);
 }
 
-async function loadRound() {
-  if (currentRound >= lunarData.length) {
+function loadRound() {
+  if (currentRound >= lunarLocations.length) {
     alert("Game over! Your final score is " + score);
     return;
   }
 
-  const roundData = lunarData[currentRound];
-  const imageUrl = API_URL(roundData.lat, roundData.lon);
-
-  moonImage.onload = () => console.log("Image loaded successfully:", imageUrl);
-  moonImage.onerror = () => {
-    console.error("Failed to load image:", imageUrl);
-    moonImage.src = "https://moon.nasa.gov/system/resources/detail_files/251_PIA13517.jpg";
-  };
-
-  moonImage.src = imageUrl;
-  moonImage.alt = "Lunar surface image";
+  const location = lunarLocations[currentRound];
+  moonImage.src = location.image;
+  moonImage.alt = "Lunar surface near " + location.name;
 
   result.textContent = "";
   guessInput.value = "";
@@ -56,7 +60,7 @@ function checkGuess() {
     return;
   }
 
-  const roundData = lunarData[currentRound - 1];
+  const roundData = lunarLocations[currentRound - 1];
   const distance = Math.sqrt(
     Math.pow(userGuess[0] - roundData.lat, 2) +
     Math.pow(userGuess[1] - roundData.lon, 2)
