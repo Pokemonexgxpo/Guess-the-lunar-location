@@ -1,4 +1,60 @@
 
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 0, lng: 0 },
+    zoom: 2,
+    streetViewControl: false,
+    mapTypeControlOptions: {
+      mapTypeIds: ["moon"],
+    },
+  });
+  
+  const moonMapType = new google.maps.ImageMapType({
+    getTileUrl: function (coord, zoom) {
+      const normalizedCoord = getNormalizedCoord(coord, zoom);
+      if (!normalizedCoord) {
+        return "";
+      }
+      const bound = Math.pow(2, zoom);
+      return (
+        "https://mw1.google.com/mw-planetary/lunar/lunarmaps_v1/clem_bw" +
+        "/" +
+        zoom +
+        "/" +
+        normalizedCoord.x +
+        "/" +
+        (bound - normalizedCoord.y - 1) +
+        ".jpg"
+      );
+    },
+    tileSize: new google.maps.Size(256, 256),
+    maxZoom: 9,
+    minZoom: 0,
+    radius: 1738000,
+    name: "Moon",
+  });
+
+  map.mapTypes.set("moon", moonMapType);
+  map.setMapTypeId("moon");
+}
+
+function getNormalizedCoord(coord, zoom) {
+  const y = coord.y;
+  let x = coord.x;
+  const tileRange = 1 << zoom;
+
+  if (y < 0 || y >= tileRange) {
+    return null;
+  }
+
+  if (x < 0 || x >= tileRange) {
+    x = ((x % tileRange) + tileRange) % tileRange;
+  }
+  return { x: x, y: y };
+}
+
 const lunarLocations = [
   {
     lat: 0,
@@ -71,6 +127,34 @@ function checkGuess() {
     Math.pow(userGuess[1] - roundData.lon, 2)
   );
 
+  // Show marker for correct location
+  new google.maps.Marker({
+    position: { lat: roundData.lat, lng: roundData.lon },
+    map: map,
+    title: roundData.name,
+    icon: {
+      path: google.maps.SymbolPath.CIRCLE,
+      scale: 10,
+      fillColor: "#00FF00",
+      fillOpacity: 0.8,
+      strokeWeight: 1
+    }
+  });
+
+  // Show marker for user's guess
+  new google.maps.Marker({
+    position: { lat: userGuess[0], lng: userGuess[1] },
+    map: map,
+    title: "Your guess",
+    icon: {
+      path: google.maps.SymbolPath.CIRCLE,
+      scale: 10,
+      fillColor: "#FF0000",
+      fillOpacity: 0.8,
+      strokeWeight: 1
+    }
+  });
+
   if (distance < 10) {
     score += 10;
     result.textContent = "Correct! Well done.";
@@ -79,6 +163,10 @@ function checkGuess() {
   }
 
   scoreDisplay.textContent = score;
+  
+  // Center map on correct location
+  map.setCenter({ lat: roundData.lat, lng: roundData.lon });
+  map.setZoom(4);
 }
 
 // Initialize the game when the DOM is fully loaded
