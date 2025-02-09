@@ -1,6 +1,8 @@
 
 const API_URL = (lat, lon) => 
-  `https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd/1.0.0/default/default0288/10/${lon}/${lat}.png`;
+  `https://api.nasa.gov/planetary/earth/assets?lon=${lon}&lat=${lat}&date=2019-01-01&dim=0.15&api_key=DEMO_KEY`;
+
+const FALLBACK_IMAGE = "https://moon.nasa.gov/system/resources/detail_files/251_PIA13517.jpg";
 
 const lunarData = [
   { lat: 170, lon: 395 }, 
