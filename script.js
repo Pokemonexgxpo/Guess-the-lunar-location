@@ -80,12 +80,12 @@ let currentRound = 0;
 let score = 0;
 
 // Get DOM elements
-const moonImage = document.getElementById("moon-image");
-const scoreDisplay = document.getElementById("score");
-const result = document.getElementById("result");
-const nextRoundButton = document.getElementById("next-round");
-const guessInput = document.getElementById("guess-coordinates");
-const submitGuessButton = document.getElementById("submit-guess");
+let moonImage = document.getElementById("moon-image");
+let scoreDisplay = document.getElementById("score");
+let result = document.getElementById("result");
+let nextRoundButton = document.getElementById("next-round");
+let guessInput = document.getElementById("guess-coordinates");
+let submitGuessButton = document.getElementById("submit-guess");
 
 function initGame() {
   // Wait for elements to be available
