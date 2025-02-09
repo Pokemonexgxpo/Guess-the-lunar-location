@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lunar Location</title>
+
+        <!-- link the stylesheet -->
+        <link rel="stylesheet" href="/style.css" />
+
+        <!-- link the JavaScript file -->
+        <script src="/script.js" defer></script>
+    
+        <!-- Parkinsans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <!-- Inter Tight -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <style>
+            .parkinsans-<uniquifier> {
+              font-family: "Parkinsans", serif;
+              font-optical-sizing: auto;
+              font-weight: <weight>;
+              font-style: normal;
+            }
+            .inter-tight-<uniquifier> {
+              font-family: "Inter Tight", serif;
+              font-optical-sizing: auto;
+              font-weight: <weight>;
+              font-style: normal;
+            }
+
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+                padding: 20px;
+                text-align: center;
+            }
+
+            li {
+                display: inline;
+            }
+
+            li a {
+                text-decoration: none;
+                color: white;
+                font-family: "Inter Tight", monospace;
+                fight-size: 20px;
+                font-weight: bold;
+                padding: 50px;
+            }
+
+            li a:hover {
+                color: #FDAF7B;
+            }
+            
+            body {
+                font-family: "Parkinsans", sans-serif;
+                text-align: center;
+                padding: 50px;
+                background-image: url("titlePageBG.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                color: white;
+            }
+    
+            h1 {
+                font-family: "Parkinsans", sans-serif;
+                color: white;
+                font-size: 100px;
+                
+            }
+    
+            p {
+                font-family: "Inter Tight", sans-serif;
+                color: white;
+                font-size: 25px;
+            }
+            
+            button {
+                padding: 15px 30px;
+                font-size: 18px;
+                cursor: pointer;
+                background-color: #FDAF7B;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+            
+            button:hover {
+                background-color: #BE7B72;
+            }
+
+            body {
+                font-family: "Parkinsans", sans-serif;
+                text-align: center;
+                padding: 50px;
+                background-image: url("titlePageBG.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                color: white;
+            }
+
+            h1 {
+                font-family: "Parkinsans", sans-serif;
+                color: white;
+                font-size: 100px;
+            }
+
+            p {
+                font-family: "Inter Tight", sans-serif;
+                color: white;
+                font-size: 25px;
+            }
+
+            button {
+                padding: 15px 30px;
+                font-size: 18px;
+                cursor: pointer;
+                background-color: #FDAF7B;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color: #BE7B72;
+            }
+
+            
+        </style>
+    </head>
+    
+    <body>
+        <nav>
+          <ul>
+            <li>
+              <a href="titlePage.html">Home</a>
+            </li>
+            <li>
+              <a href="const.html">Constellations</a>
+            </li>
+            <li>
+              <a href="team.html">About the Team</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <header>
+            <h1>LUNAR LOCATION</h1>
+        </header>
+        
+        <main>
+            <p>Test your knowledge of the Moon's surface and constellations!</p>
+            <button onclick="startGame()">Start Game</button>
+        
+            <script>
+                function startGame() {
+                    window.location.href = "game.html"; 
+                }
+            </script>
+        </main>
+    </body>
+</html>
