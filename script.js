@@ -42,7 +42,7 @@ let map;
       lat: -8.97,
       lon: 15.50,
       image: "/gamePics/seventeen.png",
-      name: "Fra Mauro"
+      name: "Taurus-Littrow"
     }
 
   ];
