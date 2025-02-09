@@ -59,19 +59,19 @@ const lunarLocations = [
   {
     lat: 0,
     lon: 23.47,
-    image: "https://www.hq.nasa.gov/alsj/a11/AS11-40-5903HR.jpg",
+    image: "https://planetary.s3.amazonaws.com/web/assets/pictures/20160831_pia02448-home-plate-apollo11.jpg",
     name: "Sea of Tranquility"
   },
   {
     lat: -3.01,
     lon: -23.42,
-    image: "https://www.hq.nasa.gov/alsj/a12/AS12-47-6897HR.jpg",
+    image: "https://planetary.s3.amazonaws.com/web/assets/pictures/as12-47-6897.jpg",
     name: "Ocean of Storms"
   },
   {
     lat: 26.13,
     lon: 3.63,
-    image: "https://www.hq.nasa.gov/alsj/a15/AS15-87-11849HR.jpg",
+    image: "https://planetary.s3.amazonaws.com/web/assets/pictures/as15-hadley-rille.jpg",
     name: "Hadley Rille"
   }
 ];
