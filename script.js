@@ -170,6 +170,12 @@ let map;
       position: { lat: roundData.lat, lng: roundData.lon },
       map: map,
       title: roundData.name,
+      label: {
+        text: roundData.name,
+        color: "#FFFFFF",
+        fontSize: "14px",
+        fontWeight: "bold"
+      },
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 10,
