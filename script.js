@@ -59,19 +59,19 @@ const lunarLocations = [
   {
     lat: 0,
     lon: 23.47,
-    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo11-landing-site.jpg",
+    image: "https://i.imgur.com/Q2nZzkF.jpg",
     name: "Sea of Tranquility"
   },
   {
     lat: -3.01,
     lon: -23.42,
-    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo12-landing-site.jpg",
+    image: "https://i.imgur.com/KtZXFyP.jpg", 
     name: "Ocean of Storms"
   },
   {
     lat: 26.13,
     lon: 3.63,
-    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo15-landing-site.jpg",
+    image: "https://i.imgur.com/8yXm2Hs.jpg",
     name: "Hadley Rille"
   }
 ];
