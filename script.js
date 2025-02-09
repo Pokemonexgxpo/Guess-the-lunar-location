@@ -59,19 +59,19 @@ const lunarLocations = [
   {
     lat: 0,
     lon: 23.47,
-    image: "https://i.imgur.com/Q2nZzkF.jpg",
+    image: "/images/tranquility.jpg",
     name: "Sea of Tranquility"
   },
   {
     lat: -3.01,
     lon: -23.42,
-    image: "https://i.imgur.com/KtZXFyP.jpg", 
+    image: "/images/storms.jpg",
     name: "Ocean of Storms"
   },
   {
     lat: 26.13,
     lon: 3.63,
-    image: "https://i.imgur.com/8yXm2Hs.jpg",
+    image: "/images/hadley.jpg",
     name: "Hadley Rille"
   }
 ];
