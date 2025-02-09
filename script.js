@@ -132,6 +132,7 @@ let map;
     }
 
     guessed = false; // Reset the guess flag
+    document.getElementById("next-round").style.display = "none"; // Initially hide next round button
     loadRound();
     document.getElementById("next-round").addEventListener("click", loadRound);
   }
@@ -208,9 +209,9 @@ let map;
     }
 
     document.getElementById("score").textContent = score;
-
     map.setCenter({ lat: roundData.lat, lng: roundData.lon });
     map.setZoom(4);
+    document.getElementById("next-round").style.display = "block";
   }
 
   document.addEventListener("DOMContentLoaded", () => {
