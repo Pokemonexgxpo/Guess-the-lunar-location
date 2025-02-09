@@ -59,19 +59,19 @@ const lunarLocations = [
   {
     lat: 0,
     lon: 23.47,
-    image: "https://planetary.s3.amazonaws.com/web/assets/pictures/20160831_pia02448-home-plate-apollo11.jpg",
+    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo11-landing-site.jpg",
     name: "Sea of Tranquility"
   },
   {
     lat: -3.01,
     lon: -23.42,
-    image: "https://planetary.s3.amazonaws.com/web/assets/pictures/as12-47-6897.jpg",
+    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo12-landing-site.jpg",
     name: "Ocean of Storms"
   },
   {
     lat: 26.13,
     lon: 3.63,
-    image: "https://planetary.s3.amazonaws.com/web/assets/pictures/as15-hadley-rille.jpg",
+    image: "https://www.nasa.gov/wp-content/uploads/2019/07/apollo15-landing-site.jpg",
     name: "Hadley Rille"
   }
 ];
@@ -88,13 +88,23 @@ const guessInput = document.getElementById("guess-coordinates");
 const submitGuessButton = document.getElementById("submit-guess");
 
 function initGame() {
-  if (moonImage && scoreDisplay && result && nextRoundButton && guessInput && submitGuessButton) {
-    loadRound();
-    nextRoundButton.addEventListener("click", loadRound);
-    submitGuessButton.addEventListener("click", checkGuess);
-  } else {
-    console.error("Some game elements are missing from the DOM");
-  }
+  // Wait for elements to be available
+  setTimeout(() => {
+    moonImage = document.getElementById("moon-image");
+    scoreDisplay = document.getElementById("score");
+    result = document.getElementById("result");
+    nextRoundButton = document.getElementById("next-round");
+    guessInput = document.getElementById("guess-coordinates");
+    submitGuessButton = document.getElementById("submit-guess");
+
+    if (moonImage && scoreDisplay && result && nextRoundButton && guessInput && submitGuessButton) {
+      loadRound();
+      nextRoundButton.addEventListener("click", loadRound);
+      submitGuessButton.addEventListener("click", checkGuess);
+    } else {
+      console.error("Some game elements are missing from the DOM");
+    }
+  }, 100);
 }
 
 function loadRound() {
