@@ -21,8 +21,6 @@ const lunarLocations = [
 ];
 
 let currentRound = 0;
-
-let currentRound = 0;
 let score = 0;
 
 const moonImage = document.getElementById("moon-image");
