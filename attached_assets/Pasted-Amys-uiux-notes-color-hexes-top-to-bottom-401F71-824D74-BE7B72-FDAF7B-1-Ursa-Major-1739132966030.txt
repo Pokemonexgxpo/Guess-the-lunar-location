@@ -1,0 +1,163 @@
+Amys uiux notes
+color hexes (top to bottom):
+401F71
+824D74
+BE7B72
+FDAF7B
+
+
+
+
+1. Ursa Major – The Great Bear
+Brightest Star: Alioth
+Distance: ~81 light-years
+Myth: The nymph Callisto was transformed into a bear by Hera out of jealousy. Zeus placed her in the sky as Ursa Major, where she eternally circles the North Star.
+
+
+2. Orion – The Hunter
+Brightest Star: Betelgeuse
+Distance: ~642 light-years
+Myth: The mighty hunter Orion boasted he could slay any beast, angering Gaia, who sent a giant scorpion to kill him. After his death, both Orion and Scorpius were placed in the sky, forever set apart so they would never meet again.
+
+
+
+3. Cassiopeia – The Queen
+Brightest Star: Shedar
+Distance: ~230 light-years
+Myth: Queen Cassiopeia claimed she and her daughter were more beautiful than the sea nymphs, angering Poseidon. As punishment, she was placed in the sky, spending half the year hanging upside down as a lesson in humility.
+
+
+
+4. Canis Major – The Greater Dog
+Brightest Star: Sirius
+Distance: ~8.6 light-years
+Myth: The swift hound Laelaps, destined to catch anything he pursued, was placed in the sky by Zeus. The constellation contains Sirius, the brightest star, known as the Dog Star that once marked the hot "dog days" of summer.
+
+
+
+5. Leo – The Lion
+Brightest Star: Regulus
+Distance: ~77 light-years
+Myth: The Nemean Lion, a beast with an impenetrable hide, was slain by Heracles using brute strength. Zeus honored the creature by placing it in the stars as Leo, symbolizing courage and strength.
+
+
+6. Andromeda – The Chained Maiden
+Brightest Star: Alpheratz
+Distance: ~97 light-years
+Myth: Princess Andromeda was chained to a rock as a sacrifice to the sea monster Cetus. She was rescued by Perseus, who turned the monster to stone using Medusa’s head, and their love was immortalized in the stars.
+
+
+7. Centaurus – The Centaur
+Brightest Star: Alpha Centauri A
+Distance: ~4.37 light-years
+Myth: The wise centaur Chiron, mentor to heroes like Achilles and Hercules, was accidentally wounded by a poisoned arrow. To end his suffering, he gave up his immortality, and Zeus honored him by placing him among the stars.
+
+
+8. Cygnus – The Swan
+Brightest Star: Deneb
+Distance: ~1,425 light-years
+Myth: Cygnus represents a friend of Phaethon, who was turned into a swan after mourning his friend’s death. Zeus placed him in the sky, where he glides along the Milky Way.
+
+
+9. Scorpius – The Scorpion
+Brightest Star: Antares
+Distance: ~600 light-years
+Myth: The great scorpion was sent by Gaia to kill Orion, the boastful hunter. After their battle, they were placed on opposite sides of the sky to ensure they never meet again.
+
+
+10. Sagittarius – The Archer
+Brightest Star: Kaus Australis
+Distance: ~142 light-years
+Myth: This constellation represents Chiron or Crotus, a centaur skilled in archery. He was honored in the stars for inventing archery and hunting techniques.
+
+
+11. Perseus – The Hero
+Brightest Star: Mirfak
+Distance: ~590 light-years
+Myth: Perseus, the slayer of Medusa, was placed in the sky holding her severed head. The star Algol represents her blinking, cursed eye, which was said to turn people to stone.
+
+12. Pegasus – The Winged Horse
+Brightest Star: Enif
+Distance: ~800 light-years
+Myth: Born from the blood of Medusa, Pegasus carried heroes like Perseus and Bellerophon. He was placed in the sky as a symbol of swiftness and divine favor.
+
+
+13. Draco – The Dragon
+Brightest Star: Aldebaran
+Distance: ~65 light-years
+Myth: Draco represents the dragon Ladon, who guarded the golden apples of the Hesperides. Hercules slew him, and Zeus placed him in the sky as a tribute.
+
+
+14. Aquarius – The Water Bearer
+Brightest Star: Sadalsuud
+Distance: ~540 light-years
+Myth: The constellation Aquarius is linked to Ganymede, a mortal so beautiful that Zeus took him to Olympus to serve as the gods' cupbearer. As a reward, he was placed among the stars.
+
+
+15. Gemini – The Twins
+Brightest Star: Castor
+Distance: ~51 light-years
+Myth: Castor and Pollux were twin brothers, one mortal and one divine. When Castor died, Pollux asked Zeus to reunite them, and they were placed together in the heavens.
+
+
+16. Aries – The Ram
+Brightest Star: Hamal
+Distance: ~66 light-years
+Myth: The golden ram of Aries saved the children Phrixus and Helle, carrying them to safety. After Phrixus sacrificed the ram in gratitude, its golden fleece became the prize of Jason and the Argonauts.
+
+17. Pisces – The Fish
+Brightest Star: Alrescha
+Distance: ~139 light-years
+Myth: When the monstrous Typhon attacked Olympus, Aphrodite and Eros transformed into fish and escaped. To honor their clever escape, they were placed in the sky as Pisces.
+
+
+18. Capricornus – The Sea Goat
+Brightest Star: Dabih
+Distance: ~330 light-years
+Myth: Pan, the goat-like god of nature, jumped into the Nile to escape Typhon, partially transforming into a fish. Zeus honored him by placing Capricornus in the heavens.
+
+
+19. Virgo – The Maiden
+Brightest Star: Spica
+Distance: ~260 light-years
+Myth: Virgo represents Astraea, the goddess of justice, who left Earth during the Age of Iron. She was placed among the stars, forever watching over humanity.
+
+
+20. Ophiuchus – The Serpent Bearer
+Brightest Star: Rasalhague
+Distance: ~47 light-years
+Myth: Ophiuchus represents Asclepius, the god of medicine, who learned the secret of resurrecting the dead. To prevent him from disrupting the natural order, Zeus placed him among the stars.
+
+
+
+Yo 20 constellations/distance/myth
+
+*There’s a formula for calculating angular distance between two stars (lmk if you guys want the formula)
+
+Example Distances for Major Constellations (As Seen from the Moon)
+Constellation
+Angular Size (°)
+Main Star Distance (ly)
+Ursa Major (Big Dipper spans ~19°)
+~19°
+Dubhe: 123 ly, Merak: 79.7 ly
+Orion (Belt spans ~4.5°)
+~4.5°
+Betelgeuse: 642 ly, Rigel: 860 ly
+Cassiopeia (W-shape spans ~15°)
+~15°
+Schedar: 228 ly, Caph: 54 ly
+Canis Major (Contains Sirius, -1.46 mag)
+~25°
+Sirius: 8.6 ly
+Leo (Sickle spans ~10°)
+~10°
+Regulus: 79 ly
+
+How Far Can You See from the Moon?
+Naked Eye Limit: Magnitude ~+6.5 (similar to Earth, but clearer without an atmosphere).
+Telescope Limit: A small telescope on the Moon could see billions of light-years away due to no atmospheric distortion.
+Hubble Deep Field Comparison: A lunar telescope could observe even fainter galaxies.
+
+
+

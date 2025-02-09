@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunar Location</title>
+    <title>Martian Madness</title>
     <link rel="stylesheet" href="style.css">
-  
+
     <!-- Parkinsans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,45 +14,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+
     <style>
-      .parkinsans-<uniquifier> {
-        font-family: "Parkinsans", serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-      }
-      .inter-tight-<uniquifier> {
-        font-family: "Inter Tight", serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-      }
-  
       ul {
           list-style-type: none;
           overflow: hidden;
           padding: 20px;
           text-align: center;
       }
-  
+
       li {
           display: inline;
       }
-  
+
       li a {
           text-decoration: none;
           color: white;
           font-family: "Inter Tight", monospace;
-          fight-size: 20px;
+          font-size: 20px;
           font-weight: bold;
           padding: 50px;
       }
-  
+
       li a:hover {
           color: #FDAF7B;
       }
-  
+
       body {
           font-family: "Parkinsans", sans-serif;
           text-align: center;
@@ -64,47 +51,42 @@
           color: white;
       }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav>
-      <ul>
-        <li>
-          <a href="titlePage.html">Home</a>
-        </li>
-        <li>
-          <a href="const.html">Constellations</a>
-        </li>
-        <li>
-          <a href="team.html">About the Team</a>
-        </li>
-      </ul>
+        <ul>
+            <li><a href="titlePage.html">Home</a></li>
+            <li><a href="const.html">Constellations</a></li>
+            <li><a href="team.html">About the Team</a></li>
+        </ul>
     </nav>
-  
+
     <main>
-      <div class="container">
-        <h1>LUNAR LOCATION</h1>
-        <p>Guess the location of the lunar image!</p>
-    
-    
-        <div id="lunar-image">
-          <img id="moon-image" src="" alt="Lunar Surface">
+        <div class="container">
+            <h1>Martian Madness</h1>
+            <p>Guess the location of the Martian image!</p>
+
+            <div id="lunar-image">
+                <img id="moon-image" src="" alt="Mars Surface">
+            </div>
+
+            <div id="map" style="height: 500px; width: 50%; margin: 20px auto; border: 2px solid white; border-radius: 10px;"></div>
+            <div id="mars-map" style="height: 500px; width: 50%; margin: 20px auto; border: 2px solid white; border-radius: 10px;"></div>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOojAlm6BYkMs0emwZ99uP0pcq4AESk4w&callback=initMap" async defer></script>
+            
+            <div id="feedback">
+                <p>Your Score: <span id="score">0</span></p>
+                <p>Enter coordinates (latitude, longitude):</p>
+                <input type="text" id="guess-coordinates" placeholder="e.g. 170, 395">
+                <button id="submit-guess">Submit Guess</button>
+                <p id="result"></p>
+                <button id="next-round">Next Round</button>
+            </div>
         </div>
-    
-        <div id="map" style="height: 500px; width: 50%; margin: 20px auto; border: 2px solid white; border-radius: 10px;"></div>
-        
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOojAlm6BYkMs0emwZ99uP0pcq4AESk4w&callback=initMap" async defer></script>
-    
-        <div id="feedback">
-          <p>Your Score: <span id="score">0</span></p>
-          <p id="result"></p>
-          <button id="next-round">Next Round</button>
-        </div>
-        
-      </div>
-      
     </main>
-  
-    <script src="script.js"></script>
-  </body>
+
+    <script src="script2.js"></script>
+</body>
 </html>

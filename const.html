@@ -29,15 +29,30 @@
       font-style: normal;
     }
 
+    /* flexbox for formatting constellaion sections */
+    .constDesc {
+      display: flex;
+    }
+    .constImage, .constDetail {
+      margin-left: 10%;
+      display: flex;
+      justify-content: left;
+    }
+
     body {
         font-family: "Parkinsans", sans-serif;
         text-align: center;
         padding: 50px;
-        background-image: url("constBG.png");
+        background-image: url("websiteBGs/constBG.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         color: black;
+    }
+
+    img {
+      border-radius: 30%;
+      border: 5px solid #BE7B72;
     }
 
     h1 {
@@ -114,9 +129,125 @@
   </header>
 
   <main>
-    <h2>Ursa Major</h2>
-    <p>Brightest star: Alioth</p><p>Distance from Earth: 81 light-years</p><p>Mythology: The nymph Callisto was transformed into a bear by Hera out of jealousy. Zeus placed her in the sky as Ursa Major, where she eternally circles the North Star.</p>
+    <h2>Ursa Major - The Great Bear</h2>
+    <div class="constDetail">
+      <img src="constPics/ursaMajor.png" alt="Ursa Major" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Alioth.<br>DISTANCE FROM MOON: 81 light-years.<br>MYTHOLOGY: The nymph Callisto was transformed into a bear by Hera out of jealousy. Zeus placed her in the sky as Ursa Major, where she eternally circles the North Star.</p>
+    </div>
     
-    
+    <h2>Orion - The Hunter</h2>
+    <div class="constDetail">
+      <img src="constPics/orion.png" alt="Orion" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Betelgeuse.<br>DISTANCE FROM MOON: 642 light-years.<br>MYTHOLOGY: The mighty hunter Orion boasted he could slay any beast, angering Gaia, who sent a giant scorpion to kill him. After his death, both Orion and Scorpius were placed in the sky, forever set apart so they would never meet again.</p>
+    </div>
+
+    <h2>Cassiopeia - The Queen</h2>
+    <div class="constDetail">
+      <img src="constPics/cassiopeia.png" alt="Cassiopeia" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Shedar.<br>DISTANCE FROM MOON: 230 light-years.<br>MYTHOLOGY: Queen Cassiopeia claimed she and her daughter were more beautiful than the sea nymphs, angering Poseidon. As punishment, she was placed in the sky, spending half the year hanging upside down as a lesson in humility.</p>
+    </div>
+
+    <h2>Canis Major - The Greater Dog</h2>
+    <div class="constDetail">
+      <img src="constPics/canisMajor.png" alt="Canis Major" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Sirius<br>DISTANCE FROM MOON: 8.6 light-years.<br>MYTHOLOGY: The swift hound Laelaps, destined to catch anything he pursued, was placed in the sky by Zeus. The constellation contains Sirius, the brightest star, known as the Dog Star that once marked the hot "dog days" of summer.</p>
+    </div>
+
+    <h2>Leo - The Lion</h2>
+    <div class="constDetail">
+      <img src="constPics/leo.png" alt="Leo" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Regulus<br>DISTANCE FROM MOON: 77 light-years.<br>MYTHOLOGY: The Nemean Lion, a beast with an impenetrable hide, was slain by Heracles using brute strength. Zeus honored the creature by placing it in the stars as Leo, symbolizing courage and strength.</p>
+    </div>
+
+    <h2>Andromeda - The Chained Maiden</h2>
+    <div class="constDetail">
+      <img src="constPics/andromeda.png" alt="Andromeda" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Alpheratz<br>DISTANCE FROM MOON: 97 light-years.<br>MYTHOLOGY: Princess Andromeda was chained to a rock as a sacrifice to the sea monster Cetus. She was rescued by Perseus, who turned the monster to stone using Medusa’s head, and their love was immortalized in the stars.</p>
+    </div>
+
+    <h2>Centaurus - The Centaur</h2>
+    <div class="constDetail">
+      <img src="constPics/centaurus.png" alt="Centaurus" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Alpha Centauri A<br>DISTANCE FROM MOON: 4.37 light-years.<br>MYTHOLOGY: The wise centaur Chiron, mentor to heroes like Achilles and Hercules, was accidentally wounded by a poisoned arrow. To end his suffering, he gave up his immortality, and Zeus honored him by placing him among the stars.</p>
+    </div>
+
+    <h2>Cygnus - The Swan</h2>
+    <div class="constDetail">
+      <img src="constPics/cygnus.png" alt="Cygnus" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Deneb<br>DISTANCE FROM MOON: 1425 light-years.<br>MYTHOLOGY: Cygnus represents a friend of Phaethon, who was turned into a swan after mourning his friend’s death. Zeus placed him in the sky, where he glides along the Milky Way.</p>
+    </div>
+
+    <h2>Scorpius - The Scorpion</h2>
+    <div class="constDetail">
+      <img src="constPics/scorpius.png" alt="Scorpius" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Antares<br>DISTANCE FROM MOON: 600 light-years.<br>MYTHOLOGY: The great scorpion was sent by Gaia to kill Orion, the boastful hunter. After their battle, they were placed on opposite sides of the sky to ensure they never meet again.</p>
+    </div>
+
+    <h2>Sagittarius - The Archer</h2>
+    <div class="constDetail">
+      <img src="constPics/sagittarius.png" alt="Sagittarius" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Kaus Australis<br>DISTANCE FROM MOON: 142 light-years.<br>MYTHOLOGY: This constellation represents Chiron or Crotus, a centaur skilled in archery. He was honored in the stars for inventing archery and hunting techniques.</p>
+    </div>
+
+    <h2>Perseus - The Hero</h2>
+    <div class="constDetail">
+      <img src="constPics/perseus.png" alt="Perseus" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Mirfak<br>DISTANCE FROM MOON: 590 light-years.<br>MYTHOLOGY: Perseus, the slayer of Medusa, was placed in the sky holding her severed head. The star Algol represents her blinking, cursed eye, which was said to turn people to stone.</p>
+    </div>
+
+    <h2>Pegasus - The Winged Horse</h2>
+    <div class="constDetail">
+      <img src="constPics/pegasus.png" alt="Pegasus" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Enif<br>DISTANCE FROM MOON: 800 light-years.<br>MYTHOLOGY: Born from the blood of Medusa, Pegasus carried heroes like Perseus and Bellerophon. He was placed in the sky as a symbol of swiftness and divine favor.</p>
+    </div>
+
+    <h2>Draco - The Dragon</h2>
+    <div class="constDetail">
+      <img src="constPics/draco.png" alt="Draco" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Aldebaran<br>DISTANCE FROM MOON: 65 light-years.<br>MYTHOLOGY: Draco represents the dragon Ladon, who guarded the golden apples of the Hesperides. Hercules slew him, and Zeus placed him in the sky as a tribute.</p>
+    </div>
+
+    <h2>Aquarius - The Water Bearer</h2>
+    <div class="constDetail">
+      <img src="constPics/aquarius.png" alt="Aquarius" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Sadalsuud<br>DISTANCE FROM MOON: 540 light-years.<br>MYTHOLOGY: The constellation Aquarius is linked to Ganymede, a mortal so beautiful that Zeus took him to Olympus to serve as the gods' cupbearer. As a reward, he was placed among the stars.</p>
+    </div>
+
+    <h2>Gemini - The Twins</h2>
+    <div class="constDetail">
+      <img src="constPics/gemini.png" alt="Gemini" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Castor<br>DISTANCE FROM MOON: 51 light-years.<br>MYTHOLOGY: Castor and Pollux were twin brothers, one mortal and one divine. When Castor died, Pollux asked Zeus to reunite them, and they were placed together in the heavens.</p>
+    </div>
+
+    <h2>Aries - The Ram</h2>
+    <div class="constDetail">
+      <img src="constPics/aries.png" alt="Aries" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Hamal<br>DISTANCE FROM MOON: 66 light-years.<br>MYTHOLOGY: The golden ram of Aries saved the children Phrixus and Helle, carrying them to safety. After Phrixus sacrificed the ram in gratitude, its golden fleece became the prize of Jason and the Argonauts.</p>
+    </div>
+
+    <h2>Pisces - The Fish</h2>
+    <div class="constDetail">
+      <img src="constPics/pisces.png" alt="Pisces" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Alrescha<br>DISTANCE FROM MOON: 139 light-years.<br>MYTHOLOGY: When the monstrous Typhon attacked Olympus, Aphrodite and Eros transformed into fish and escaped. To honor their clever escape, they were placed in the sky as Pisces.</p>
+    </div>
+
+    <h2>Capricornus - The Sea Goat</h2>
+    <div class="constDetail">
+      <img src="constPics/capricornus.png" alt="Capricornus" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Dabih<br>DISTANCE FROM MOON: 330 light-years.<br>MYTHOLOGY: Pan, the goat-like god of nature, jumped into the Nile to escape Typhon, partially transforming into a fish. Zeus honored him by placing Capricornus in the heavens.</p>
+    </div>
+
+    <h2>Virgo - The Maiden</h2>
+    <div class="constDetail">
+      <img src="constPics/virgo.png" alt="Virgo" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Spica<br>DISTANCE FROM MOON: 260 light-years.<br>MYTHOLOGY: Virgo represents Astraea, the goddess of justice, who left Earth during the Age of Iron. She was placed among the stars, forever watching over humanity.</p>
+    </div>
+
+    <h2>Ophiuchus - The Serpent Bearer</h2>
+    <div class="constDetail">
+      <img src="constPics/ophiuchus.png" alt="Ophiuchus" class="constImage">
+      <p class="constDetail">BRIGHTEST STAR: Rasalhague<br>DISTANCE FROM MOON: 47 light-years.<br>MYTHOLOGY: Ophiuchus represents Asclepius, the god of medicine, who learned the secret of resurrecting the dead. To prevent him from disrupting the natural order, Zeus placed him among the stars.</p>
+    </div>
+
   </main>
 </body>

@@ -99,7 +99,7 @@
                 font-family: "Parkinsans", sans-serif;
                 text-align: center;
                 padding: 50px;
-                background-image: url("titlePageBG.png");
+                background-image: url("websiteBGs/titlePageBG.png");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -120,6 +120,7 @@
 
             button {
                 padding: 15px 30px;
+                margin: 30px;
                 font-size: 18px;
                 cursor: pointer;
                 background-color: #FDAF7B;
@@ -127,6 +128,7 @@
                 border: none;
                 border-radius: 5px;
             }
+            
             button:hover {
                 background-color: #BE7B72;
             }
@@ -155,11 +157,10 @@
         </header>
         
         <main>
-            <p>Test your knowledge of the Moon's surface and constellations!</p>
-            <button onclick="startGame()">Start Game</button>
-        
+            <p>Test your knowledge of celestial bodies!</p>
+            <button onclick="startLunarGame()">Travel to the Moon</button><br>
             <script>
-                function startGame() {
+                function startLunarGame() {
                     window.location.href = "game.html"; 
                 }
             </script>

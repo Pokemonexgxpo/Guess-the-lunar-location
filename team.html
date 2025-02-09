@@ -38,11 +38,15 @@
       font-style: normal;
     }
 
+    @keyframes desc {
+      /* add sliding anim */
+    }
+
     body {
         font-family: "Parkinsans", sans-serif;
         text-align: center;
         padding: 50px;
-        background-image: url("teamBG.png");
+        background-image: url("websiteBGs/teamBG.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -76,13 +80,31 @@
     h1 {
       font-family: "Parkinsans", sans-serif;
       color: white;
+      margin-left: 20%;
       font-size: 70px;
     }
 
-    p {
+    .text p {
         font-family: "Inter Tight", sans-serif;
         color: white;
         font-size: 25px;
+        margin-left: 50%;
+        margin-right: 10%;
+    }
+
+    .text {
+      animation: fadeIn 3s;
+      -webkit-animation: fadeIn 3s;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
     }
   </style>
 
@@ -105,10 +127,18 @@
 
   <header>
     <h1>ABOUT THE TEAM</h1>
-    
   </header>
 
   <main>
-    
+    <div class="text">
+      <p>
+        <br>Aneesh, Amy, and Harshini are 11th-grade students from Cox Mill High School. They like all things STEM-related and have a particular affinity toward engineering. With a strong will to learn, they’ve come together as friends and created this GeoGuessr-esque game as innovators. They strive for a better well-informed community and hope you do, too.
+      </p>
+      <p><br>
+        Aneesh Irthineni: Programming<br>
+        Amy Huang: User interface and styling<br>
+        Harshini Bulusu: Media research
+      </p>
+    </div>
   </main>
 </body>
